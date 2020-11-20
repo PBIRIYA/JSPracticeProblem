@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CodePen - Demo Flexbox Layout 2
+        </title> 
+        <style>
+            body{
+            padding: 2em;
+            display: flex;
+            flex-direction: row;
+            }
+            .sideBarLeftItem{ 
+            background: gold;
+            flex: 1;
+            }
+            .mainContainer{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-weight: bold;
+            flex: 5;
+            }
+            .headerContainer{
+            align-content: center;
+            font-weight: bold;
+            padding: 1opx;
+            background: tomato;
+            height: 20vh;
+            flex: 1
+            }
+            .footerContainer{
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 1opx;
+            height: 20vh;
+            flex: 1;
+            }
+            .mainContentItem{
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            background: deepskyblue;
+            flex: 5;
+            }
+            .articleGroup{
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            }
+            article{
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+            }
+            .sideBarRightItem{
+            background: hotpink;
+            flex: 1;  
+            }
+            .sideBarItem{ border:0px solid green;}
+        </style>
+    </head>
+    <body>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <div class="mainContainer">
+        <header class="headerContainer">
+            <h1>HEADER - Sample Flexbox Example</h1>
+        </header>
+        <section class="mainContentItem">
+            <div class = "articleGroup">
+        <article>
+            <h2>
+                First article
+            </h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+    
+          <article>
+           <h2>
+               First article
+           </h2>
+           <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+       </article>
+       <article>
+           <h2>
+               First article
+           </h2>
+           <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+       </article>
+       </div>
+       <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+       </section>
+       <footer class="footerContainer">Footer</footer>
+       </div>
+    </body>
+</html>>
